@@ -29,3 +29,8 @@ document.getElementById("play-button").addEventListener("click", function() {
         box.style.display = "none";
     }
 });
+// 视频加载完成后隐藏加载指示灯功能
+function hideLoading() {
+    var loadingElement = document.getElementById('loading');
+    loadingElement.style.display = 'none';
+}
