@@ -35,79 +35,79 @@ button:active {
 }
 .box{
     width: 100%;
-    max-width: 896px;
     height: 100%;
     z-index: 3;
     background-color: white;
     position: fixed;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.top span{
-    font-size: 36px;
+.container {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+.message {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.question {
+    font-size: 20px;
     font-weight: bold;
-    margin: 20px 0;
-    background-color: #d81e06; /* 经典红色 */
-    color: white;
-    font-size: 2em;
-    font-style:normal;
-    text-align: center;
+    color: #b1123d;
+    margin-bottom: 30px;
 }
-.i1{
-    width: 5em;
-    height: auto;
-    float: right;
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 }
-.c1{
-    background-color: blue;
-    color: yellow;
-    font-size: 2em;
-    font-style:normal;
+
+.buttons p {
+    flex: 1;
+    padding: 15px 0;
+    height: 50px;
+    max-width: 45%;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
 }
-.c2{
-    background-color: white;
-    color: black;
-    font-size: 1em;
+
+.buttons .yes {
+    background-color: #b1123d;
+    color: #fff;
 }
-.c3{
-    background-color: black;
-    color: #ffffff;
-    font-size: 2em;
-    font-style:normal;
+
+.buttons .yes:hover {
+    background-color: #900d2f;
 }
-.p1{
-    font-size: 1em;
-    background-color: yellow;
-    color: black;
-    border-bottom: 5px solid black;
-    margin: 0;
-    width: 100%;
-    text-align: center;
-    font-style:normal;
+
+.buttons .no {
+    background-color: #fff;
+    color: #666;
+    border: 1px solid #ccc;
 }
-.p2{
-    background-color: #d81e06;
-    color: white;
-    font-size: 2em;
-    margin-top: 1px;
-    width: 100%;
-    text-align: center;
-    font-style:normal;
+
+.buttons .no:hover {
+    background-color: #f0f0f0;
 }
-.p3{
-    background-color: yellow;
-    color: red;
-    font-size: 5em;
-    margin: 0;
-    text-align:center;
-    font-style:normal;
+video::-webkit-media-controls {
+    display: none !important;
 }
-.bg{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
+video::-webkit-media-controls-enclosure {
+    display: none !important;
 }

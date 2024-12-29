@@ -3,68 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>鸡窝托斯第一涩，涩爆你想象！</title>
+    <title>あなたは18歳以上ですか？</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="./video/2-你被骗了，但是中国风-720P 高清-AVC.mp4" as="video" type="./video/2-你被骗了，但是中国风-720P 高清-AVC.mp4" x5-video-player-type="h5">
 </head>
 
 <body>
-    <video id="my-video" src="./video/2-你被骗了，但是中国风-720P 高清-AVC.mp4" loop autoplay></video>
+    <video id="my-video" src="./video/2-你被骗了，但是中国风-720P 高清-AVC.mp4" loop autoplay  controlsList="nodownload"></video>
     <button id="play-button">播放并全屏</button>
-    <div class="bg"></div>
     <div class="box">
-        <div class="top">
-            <span>鸡窝托斯第一涩，涩爆你想象！</span>
-        </div>
         <div class="container">
-            <span class="c1">你以为你吃过最好的零食？错！鸡窝托斯，爽口、香脆、第一涩——比你想象的更涩、更劲爆！</span>
-            <span class="c2">鸡窝托斯第一涩，涩爆你想象！</span>
-            <span class="c3">从鸡窝到你嘴巴，体验前所未有的“涩”感！每一口都带着让你心跳加速的疯狂节奏！不信？</span>
-            <img src="./img/1.jpg" alt="" class="i1">
-            <p class="p1">试试就知道！无论你是吃货还是看客，鸡窝托斯都能让你尖叫连连！<br>为什么吃了都停不下来？因为它，就是这么“涩”！</p>
-            <p class="p2">鸡窝托斯第一涩，错过就太可惜！</p>
-            <p class="p3">开来下单吧！</p>
+            <div class="message">
+                ここから先は、アダルト商品を扱うアダルトサイトとなります。18歳未満の方のアクセスは固くお断りします。
+            </div>
+            <div class="question">
+                あなたは18歳以上ですか？
+            </div>
+            <div class="buttons">
+                <p class="yes">はい</p>
+                <p class="no">いいえ</p>
+            </div>
         </div>
-        <p></p>
-        <div class="top">
-            <span>鸡窝托斯第一涩，涩爆你想象！</span>
-        </div>
-        <div class="container">
-            <span class="c1">你以为你吃过最好的零食？错！鸡窝托斯，爽口、香脆、第一涩——比你想象的更涩、更劲爆！</span>
-            <span class="c2">鸡窝托斯第一涩，涩爆你想象！</span>
-            <span class="c3">从鸡窝到你嘴巴，体验前所未有的“涩”感！每一口都带着让你心跳加速的疯狂节奏！不信？</span>
-            <img src="./img/1.jpg" alt="" class="i1">
-            <p class="p1">试试就知道！无论你是吃货还是看客，鸡窝托斯都能让你尖叫连连！<br>为什么吃了都停不下来？因为它，就是这么“涩”！</p>
-            <p class="p2">鸡窝托斯第一涩，错过就太可惜！</p>
-            <p class="p3">开来下单吧！</p>
         </div>
     </div>
 </body>
 <script src="script.js"></script>
-<script>
-    const video = document.getElementById('my-video');
-        const playButton = document.getElementById('play-button');
-        playButton.addEventListener('click', async () => {
-            try {
-                // 播放视频
-                await video.play();
-
-                // 尝试全屏
-                if (video.requestFullscreen) {
-                    await video.requestFullscreen();
-                } else if (video.webkitRequestFullscreen) {
-                    await video.webkitRequestFullscreen(); // Safari/旧版 Chrome
-                } else if (video.mozRequestFullScreen) {
-                    await video.mozRequestFullScreen(); // Firefox
-                } else if (video.msRequestFullscreen) {
-                    await video.msRequestFullscreen(); // IE/Edge
-                } else {
-                    console.warn("该浏览器不支持全屏 API");
-                }
-                // 隐藏播放按钮
-                playButton.style.display = 'none';
-            } catch (error) {
-                console.error("播放或全屏失败：", error);
-            }
-        });
-</script>
 </html>
